@@ -24,7 +24,7 @@ int main()
 	//число Ч по правому. ѕромежуток заполн€етс€ символами заполнител€
 	cout.setf(ios::internal);
 	cout << negative_int << endl;//ѕочему минус в начале строки?
-
+	
 	//устанавливаем ширину пол€ вывода
 	cout.width(50); 
 	//устанавливаем символ заполнитель(по умолчанию - пробел)
@@ -81,14 +81,15 @@ int main()
 	cout << "\nѕечатаем знаки\n";
 	//печатаем знак при выводе положительных чисел
 	cout.flags(ios::showpos);
+
 	cout << _int << endl;
 
 	//??cout.flags(ios::noshowpos);
 
 	if (_double == _float) // с long double работало
 		a = 1;
+	cout.unsetf(ios::showpos);
 
-	cout << noshowpos << a << endl;
 	cout << a << endl;
 
 	system("pause");
